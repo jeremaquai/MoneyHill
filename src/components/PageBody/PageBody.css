@@ -1,0 +1,5 @@
+.Switch {
+    min-width: 85vw;
+    max-height: 80vh;
+    overflow-y: scroll;
+}

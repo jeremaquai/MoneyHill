@@ -1,0 +1,21 @@
+.MainNav {
+    background-color: black;
+    max-width: 15vw;
+    min-width: 15vw;
+    min-height: 80vh;
+    max-height: 80vh;
+}
+
+.MainNav a {
+    margin: auto;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+.link {
+    margin: auto 1rem;
+    padding: .5rem;
+}

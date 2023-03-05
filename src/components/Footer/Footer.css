@@ -1,0 +1,11 @@
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    min-height: 5vh;
+}
+
+.DevContact {
+    margin: auto;
+}
