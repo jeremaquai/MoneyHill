@@ -1,9 +1,6 @@
 .MainNav {
     background-color: black;
-    max-width: 15vw;
-    min-width: 15vw;
-    min-height: 80vh;
-    max-height: 80vh;
+    width: 100%;
 }
 
 .MainNav a {

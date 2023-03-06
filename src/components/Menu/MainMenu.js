@@ -3,9 +3,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { MENUPATHS } from "../../data/Paths";
 
-import './Menu.css';
+import './MainMenu.css';
 
-export default function Menu() {
+export default function MainMenu() {
     return (
         <nav className="MainNav" >
             <div className="link">
