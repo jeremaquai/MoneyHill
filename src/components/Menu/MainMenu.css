@@ -12,7 +12,91 @@
     
 }
 
-.link {
+.AboutLink,
+.AmenitiesLink,
+.EventsLink,
+.ActivitiesLink,
+.MembershipLink,
+.ResidentialLink {
     margin: auto 1rem;
     padding: .5rem;
 }
+
+.AboutLinkGroup:hover .AboutLinkSubMenu {
+    display: block;
+}
+
+.AmenitiesLinkGroup:hover .AmenitiesLinkSubMenu {
+    display: block;
+}
+
+.EventsLinkGroup:hover .EventsLinkSubMenu {
+    display: block;
+}
+
+.ActivitiesLinkGroup:hover .ActivitiesLinkSubMenu {
+    display: block;
+}
+
+.ResidentialLinkGroup:hover .ResidentialLinkSubMenu {
+    display: block;
+}
+
+.AboutLink:hover:hover,
+.AmenitiesLink:hover,
+.EventsLink:hover,
+.ActivitiesLink:hover,
+.MembershipLink:hover,
+.ResidentialLink:hover,
+.NatureLink:hover,
+.HistoryLink:hover,
+.ClubhouseLink:hover,
+.GolfLink:hover,
+.TennisLink:hover,
+.FitnessLink:hover,
+.OutdoorsLink:hover,
+.WeddingsLink:hover,
+.TournamentsLink:hover,
+.BusinessLink:hover,
+.YouthLink:hover,
+.GroupsLink:hover,
+.ComMapLink:hover,
+.HomesLink:hover,
+.LandLink:hover,
+.CottagesLink:hover,
+.ResourcesLink:hover {
+    background-color: gray;
+}
+
+.NatureLink,
+.HistoryLink,
+.ClubhouseLink,
+.GolfLink,
+.TennisLink,
+.FitnessLink,
+.OutdoorsLink,
+.WeddingsLink,
+.TournamentsLink,
+.BusinessLink,
+.YouthLink,
+.GroupsLink,
+.ComMapLink,
+.HomesLink,
+.LandLink,
+.CottagesLink,
+.ResourcesLink {
+    padding-top: .5rem;
+}
+
+.AboutLinkSubMenu,
+.AmenitiesLinkSubMenu,
+.EventsLinkSubMenu,
+.ActivitiesLinkSubMenu,
+.MembershipLinkSubMenu,
+.ResidentialLinkSubMenu {
+    display: none;
+    margin: auto 2rem;
+    padding: .5rem;
+}
+
+

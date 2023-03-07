@@ -1,11 +1,18 @@
 footer {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     background-color: black;
     color: white;
-    min-height: 5vh;
+    max-height: 45%;
 }
 
 .DevContact {
     margin: auto;
+    max-height: 5%;
+}
+
+.DevContact p {
+    margin: auto;
+    padding-bottom: 5%;
 }
