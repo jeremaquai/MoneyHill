@@ -1,15 +1,35 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import { Provider } from 'react-redux';
-import { store } from './app/store';
+import { store } from './store';
 import App from './App';
 
-test('renders learn react link', () => {
-  const { getByText } = render(
+test('renders a header element', () => {
+  const { getByRole } = render(
     <Provider store={store}>
       <App />
     </Provider>
   );
 
-  expect(getByText(/learn/i)).toBeInTheDocument();
+  expect(getByRole(/banner/i)).toBeInTheDocument();
+});
+
+test('renders a footer', () => {
+  const { getByRole } = render(
+    <Provider store={store}>
+      <App />
+    </Provider>
+  );
+
+  expect(getByRole(/contentinfo/i)).toBeInTheDocument();
+});
+
+test('renders a Nav menu', () => {
+  const { getByRole } = render(
+    <Provider store={store}>
+      <App />
+    </Provider>
+  );
+
+  expect(getByRole(/navigation/i)).toBeInTheDocument();
 });

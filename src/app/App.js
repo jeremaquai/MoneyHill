@@ -12,6 +12,7 @@ import './App.css';
 import Header from '../components/Header/Header';
 import PageBody from '../components/PageBody/PageBody';
 import SideBar from '../components/SideBar/SideBar';
+import Footer from '../components/Footer/Footer';
 
 // main App function
 function App() {
@@ -20,7 +21,10 @@ function App() {
       <Header />
       <div className='MenuAndBody' >
         <SideBar />
-        <PageBody />
+        <div className='BodyAndFooter' >
+          <PageBody />
+          <Footer />
+        </div>
       </div>
     </Router>
   );

@@ -1,0 +1,6 @@
+.tweet {
+    max-width: 100%;
+    min-height: 40%;
+    max-height: 45%;
+    overflow-y: scroll;
+}
