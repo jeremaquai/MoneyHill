@@ -26,7 +26,8 @@ export default function MainMenu() {
                             { menuItem.subMenus.map((subMenuItem, index) => {
                                 return (
                                     <div key={index} className={subMenuItem.class}>
-                                        <NavLink to={subMenuItem.path} >
+                                        <NavLink to={subMenuItem.path}
+                                        activeClassName={'active'} >
                                             {subMenuItem.name}
                                         </NavLink>
                                     </div>

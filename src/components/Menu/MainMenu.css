@@ -12,6 +12,12 @@
     
 }
 
+.active {
+    font-weight: bolder;
+    color: blue;
+}
+
+.HomeLink,
 .AboutLink,
 .AmenitiesLink,
 .EventsLink,
@@ -42,7 +48,8 @@
     display: block;
 }
 
-.AboutLink:hover:hover,
+.HomeLink:hover,
+.AboutLink:hover,
 .AmenitiesLink:hover,
 .EventsLink:hover,
 .ActivitiesLink:hover,

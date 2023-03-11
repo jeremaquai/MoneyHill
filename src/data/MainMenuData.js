@@ -1,5 +1,11 @@
 export const MAINMENUDATA = [
         {
+            name: 'Home',
+            class: 'HomeLink',
+            path: '/',
+            subMenus: []
+        },
+        {
             name: 'About Us',
             path: '/About',
             class: 'AboutLink',

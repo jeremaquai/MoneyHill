@@ -1,19 +1,42 @@
 footer {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    
     background-color: black;
     color: white;
-    max-height: 45%;
+    min-height: 10vh;
+    max-height: 10vh;
+    overflow: hidden;
 }
 
 .DevContact {
     margin: auto;
-    min-height: 10vh;
-    max-height: 10vh;
+    width: 20%;
 }
 
-.DevContact p {
+.MoneyHillContact {
+    display: flex;
+    justify-content: space-around;
     margin: auto;
-    padding-bottom: 5%;
+    width: 50%;
+    
+}
+
+p {
+    line-height: 45%;
+}
+
+.phoneAndEmail {
+    margin: auto;
+}
+
+.address {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+i {
+    margin: auto;
+    padding-right: 20px;
 }
