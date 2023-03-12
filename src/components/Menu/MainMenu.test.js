@@ -14,82 +14,42 @@ test('renders a navigation menu', () => {
     expect(getByRole(/navigation/i)).toBeInTheDocument();
 });
 
-test('renders an About Us link', () => {
-    const { getByText } = render(
+test('renders the appropriate links in menu', () => {
+    const { getByRole } = render(
         <Provider store={store}>
             <App />
         </Provider>
     );
-  
-    expect(getByText(/about us/i)).toBeInTheDocument();
+    
+    expect(getByRole(/homeLink/i)).toBeInTheDocument();
+    
+    expect(getByRole(/aboutlink/i)).toBeInTheDocument();
+    expect(getByRole(/natureLink/i)).toBeInTheDocument();
+    expect(getByRole(/historyLink/i)).toBeInTheDocument();
+    
+    expect(getByRole(/amenitiesLink/i)).toBeInTheDocument();
+    expect(getByRole(/clubhouseLink/i)).toBeInTheDocument();
+    expect(getByRole(/GolfLink/i)).toBeInTheDocument();
+    expect(getByRole(/tennisLink/i)).toBeInTheDocument();
+    expect(getByRole(/fitnessLink/i)).toBeInTheDocument();
+    expect(getByRole(/OutdoorsLink/i)).toBeInTheDocument();
+
+    expect(getByRole(/eventsLink/i)).toBeInTheDocument();
+    expect(getByRole(/weddingsLink/i)).toBeInTheDocument();
+    expect(getByRole(/tournamentsLink/i)).toBeInTheDocument();
+    expect(getByRole(/businessLink/i)).toBeInTheDocument();
+    
+    expect(getByRole(/activitiesLink/i)).toBeInTheDocument();
+    expect(getByRole(/youthLink/i)).toBeInTheDocument();
+    expect(getByRole(/groupsLink/i)).toBeInTheDocument();
+
+    expect(getByRole(/membershipLink/i)).toBeInTheDocument();
+    
+    expect(getByRole(/residentialLink/i)).toBeInTheDocument();
+    expect(getByRole(/commapLink/i)).toBeInTheDocument();
+    expect(getByRole(/homesLink/i)).toBeInTheDocument();
+    expect(getByRole(/landLink/i)).toBeInTheDocument();
+    expect(getByRole(/cottagesLink/i)).toBeInTheDocument();
+    expect(getByRole(/resourcesLink/i)).toBeInTheDocument();
 });
 
-test('renders a Nature link', () => {
-    const { getByText } = render(
-        <Provider store={store}>
-            <App />
-        </Provider>
-    );
-  
-    expect(getByText(/nature/i)).toBeInTheDocument();
-});
-
-test('renders a History link', () => {
-    const { getByText } = render(
-        <Provider store={store}>
-            <App />
-       </Provider>
-    );
-  
-    expect(getByText(/history/i)).toBeInTheDocument();
-});
-
-test('renders an events link', () => {
-    const { getByText } = render(
-        <Provider store={store}>
-            <App />
-        </Provider>
-    );
-
-    expect(getByText(/events/i)).toBeInTheDocument();
-});  
-
-test('renders an Amenities link', () => {
-    const { getByText } = render(
-        <Provider store={store}>
-            <App />
-        </Provider>
-    );
-
-    expect(getByText(/amenities/i)).toBeInTheDocument();
-});
-
-test('renders an About Us link', () => {
-    const { getAllByText } = render(
-        <Provider store={store}>
-            <App />
-        </Provider>
-    );
-
-    expect(getAllByText(/activities/i)).toBeTruthy();
-});
-
-test('renders a Membership link', () => {
-    const { getByText } = render(
-        <Provider store={store}>
-            <App />
-        </Provider>
-    );
-  
-    expect(getByText(/membership/i)).toBeInTheDocument();
-});
-
-test('renders a Residential link', () => {
-    const { getByText } = render(
-        <Provider store={store}>
-            <App />
-        </Provider>
-    );
-  
-    expect(getByText(/residential/i)).toBeInTheDocument();
-});

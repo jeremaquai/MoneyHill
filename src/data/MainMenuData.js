@@ -87,7 +87,7 @@ export const MAINMENUDATA = [
                     path: '/Activities/Youth'
                 },
                 {
-                    name: 'Groups & Gtherings',
+                    name: 'Groups & Gatherings',
                     class: 'GroupsLink',
                     path: '/Activities/Groups'
                 }

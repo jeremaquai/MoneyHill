@@ -11,7 +11,7 @@ export default function Footer() {
                 <div className="address" >
                     <i className={FOOTERDATA.address.icon} ></i>
                     <address>
-                        <p>Money Hill</p>
+                        <p>{FOOTERDATA.address.data.name}</p>
                         <p>{FOOTERDATA.address.data.street}</p>
                         <p>{FOOTERDATA.address.data.cityStateZip}</p>
                     </address>
@@ -23,12 +23,33 @@ export default function Footer() {
                 </div>
                 <div>
                     <p>
-                        <i className={FOOTERDATA.facebook.icon} ></i>
-                        <i className={FOOTERDATA.instagram.icon} ></i>
+                        <a href={FOOTERDATA.facebook.link}
+                            role={'facebookLink'}
+                            target={'_blank'}
+                            rel="noreferrer" >
+
+                            <i alt={'facebookIcon'} className={FOOTERDATA.facebook.icon} ></i>
+                        </a>
+                        <a href={FOOTERDATA.instagram.link}
+                            role={'instagramLink'}
+                            target={'_blank'}
+                            rel="noreferrer" >
+                            <i className={FOOTERDATA.instagram.icon} ></i>
+                        </a>
                     </p>
                     <p>
-                        <i className={FOOTERDATA.twitter.icon} ></i>
-                        <i className={FOOTERDATA.linkedin.icon} ></i>
+                        <a href={FOOTERDATA.twitter.link} 
+                            role={'twitterLink'}
+                            target={'_blank'}
+                            rel="noreferrer" >
+                            <i className={FOOTERDATA.twitter.icon} ></i>
+                        </a>
+                        <a href={FOOTERDATA.linkedin.link}
+                            role={'linkedinLink'}
+                            target={'_blank'}
+                            rel={'noreferrer'} >
+                            <i className={FOOTERDATA.linkedin.icon} ></i>
+                        </a>
                     </p>
                 </div>
             </div>

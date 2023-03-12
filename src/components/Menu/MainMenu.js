@@ -1,7 +1,7 @@
 import React from "react";
 
 import { NavLink } from "react-router-dom";
-import { MENUPATHS } from "../../data/Paths";
+// import { MENUPATHS } from "../../data/Paths";
 
 import { MAINMENUDATA } from "../../data/MainMenuData";
 
@@ -17,7 +17,8 @@ export default function MainMenu() {
                     <div key={index} className={menuItem.class + 'Group'} >
                         <div className={menuItem.class} >
                             <NavLink to={ menuItem.path } 
-                            activeClassName={'active'}  >
+                            activeClassName={'active'}
+                            role={menuItem.class}  >
                                 {menuItem.name}
                             </NavLink>
                         </div>
@@ -27,7 +28,8 @@ export default function MainMenu() {
                                 return (
                                     <div key={index} className={subMenuItem.class}>
                                         <NavLink to={subMenuItem.path}
-                                        activeClassName={'active'} >
+                                        activeClassName={'active'}
+                                        role={subMenuItem.class} >
                                             {subMenuItem.name}
                                         </NavLink>
                                     </div>

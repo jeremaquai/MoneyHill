@@ -2,6 +2,7 @@ export const FOOTERDATA = {
     address: {
         icon: 'fas fa-map-marker-alt',
         data: {
+            name: 'Money Hill Golf & Country Club',
             street: '100 Country Club Drive',
             cityStateZip: 'Abita Springs, LA 70420'
         }
@@ -15,6 +16,7 @@ export const FOOTERDATA = {
         data: 'info@moneyhill.com'
     },
     facebook: {
+        name: 'facebook',
         icon: 'fab fa-facebook',
         link: 'https://www.facebook.com/moneyhillgolfandcountryclub/'
     },
