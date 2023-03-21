@@ -38,7 +38,7 @@ function App() {
       dispatch(setWindowHeight(window.innerHeight));
     })
     
-  }, []);
+  }, [dispatch]);
 
   const mobileAction = () => {
     while (!mobileState) {

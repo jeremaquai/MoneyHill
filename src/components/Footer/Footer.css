@@ -1,7 +1,8 @@
 footer {
+    /* width: 100%; */
     display: flex;
     flex-direction: row;
-    
+    justify-content: space-between;
     background-color: black;
     color: white;
     min-height: 10vh;
@@ -11,7 +12,9 @@ footer {
 
 .DevContact {
     margin: auto;
-    width: 20%;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 10%;
 }
 
 .MoneyHillContact {
