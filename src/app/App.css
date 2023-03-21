@@ -2,6 +2,10 @@
   max-height: 100vh;
 }
 
+.mobileApp {
+  max-height: 100vh;
+}
+
 .MenuAndBody {
   min-width: 100vw;
   max-width: 100vw;

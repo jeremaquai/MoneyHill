@@ -1,5 +1,17 @@
 // Import React
-import React from 'react';
+import React, { useEffect } from 'react';
+
+// Imports from React-redux
+import { 
+  useSelector, 
+  useDispatch 
+} from 'react-redux';
+
+import { 
+  selectMobileLayout,
+  setWindowHeight, 
+  setWindowWidth 
+} from './appSlice';
 
 
 // import BrowserRouter from react-router-dom
@@ -16,18 +28,44 @@ import Footer from '../components/Footer/Footer';
 
 // main App function
 function App() {
-  return (
-    <Router className='App'>
-      <Header />
-      <div className='MenuAndBody' >
-        <SideBar />
-        <div className='BodyAndFooter' >
-          <PageBody />
-          <Footer />
-        </div>
-      </div>
-    </Router>
-  );
+
+  const mobileState = useSelector(selectMobileLayout);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    window.addEventListener('resize', () => {
+      dispatch(setWindowWidth(window.innerWidth));
+      dispatch(setWindowHeight(window.innerHeight));
+    })
+    
+  }, []);
+
+  const mobileAction = () => {
+    while (!mobileState) {
+      return (
+        <Router className='App'>
+          <Header />
+          <div className='MenuAndBody' >
+            <SideBar />
+            <div className='BodyAndFooter' >
+              <PageBody />
+              <Footer />
+            </div>
+          </div>
+        </Router>
+      );
+    }
+
+    while (mobileState) {
+      return (
+        <Router className={'mobileApp'} >
+          <Header />
+        </Router>
+      );
+    }
+  }
+
+  return mobileAction();
 }
 
 export default App;

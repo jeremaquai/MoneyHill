@@ -8,8 +8,14 @@ import './SideBar.css';
 export default function SideBar() {
     return (
         <div title="SideBar" className="SideBar">
-            <MainMenu />
-            <ImbeddedTweet />
+            
+            <div>
+                <MainMenu />
+            </div>
+            <div className="ImbeddedTweet" >
+                <ImbeddedTweet />
+            </div>
+            
         </div>
     );
 }
