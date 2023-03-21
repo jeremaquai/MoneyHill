@@ -21,7 +21,7 @@ export default function Footer() {
                         <p><i className={FOOTERDATA.email.icon} ></i> {FOOTERDATA.email.data}</p>
                         
                 </div>
-                <div>
+                <div className="icons" >
                     <p>
                         <a href={FOOTERDATA.facebook.link}
                             role={'facebookLink'}

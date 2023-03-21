@@ -17,6 +17,10 @@
     color: blue;
 }
 
+.HomeLinkIcon {
+    display: none;
+}
+
 .HomeLink,
 .AboutLink,
 .AmenitiesLink,

@@ -25,6 +25,7 @@ import Header from '../components/Header/Header';
 import PageBody from '../components/PageBody/PageBody';
 import SideBar from '../components/SideBar/SideBar';
 import Footer from '../components/Footer/Footer';
+import MainMenu from '../components/Menu/MainMenu';
 
 // main App function
 function App() {
@@ -60,6 +61,9 @@ function App() {
       return (
         <Router className={'mobileApp'} >
           <Header />
+          <MainMenu />
+          <PageBody />
+          <Footer />
         </Router>
       );
     }

@@ -19,7 +19,7 @@ export default function MainMenu() {
                             <NavLink to={ menuItem.path } 
                             activeClassName={'active'}
                             role={menuItem.class}  >
-                                {menuItem.name}
+                                {menuItem.name} <i className={ menuItem.class+'Icon' + " fa-solid fa-angle-down"} ></i>
                             </NavLink>
                         </div>
                         <div className={menuItem.class + 'SubMenu'}>

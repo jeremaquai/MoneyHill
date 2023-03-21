@@ -36,11 +36,11 @@ describe('appState Reducer', () => {
 
     it('should handle window width changes and automatically change the mobileLayout ', () => {
         const testOne = appStateReducer(webState, setWindowHeight(1300));
-        const testTwo = appStateReducer(mobileState, setWindowWidth(1201));
+        const testTwo = appStateReducer(mobileState, setWindowWidth(1301));
 
         expect(testOne.windowHeight).toEqual(1300);
         expect(testOne.mobileLayout).toBe(true);
-        expect(testTwo.windowWidth).toBe(1201);
+        expect(testTwo.windowWidth).toBe(1301);
         expect(testTwo.mobileLayout).toBe(false);
     });
 

@@ -52,3 +52,28 @@ i {
     margin: auto;
     padding-right: 20px;
 }
+
+@media only screen and (max-width: 1299px) {
+    footer {
+        flex-direction: column;
+        max-height: fit-content;
+    }
+
+    .MoneyHillContact {
+        width: 100%;
+    }
+    
+}
+
+@media only screen and (max-width: 449px) {
+    .MoneyHillContact {
+        flex-direction: column;
+    }
+
+    .icons {
+        margin: auto;
+    }
+    .DevContact {
+        margin: auto;
+    }
+}
