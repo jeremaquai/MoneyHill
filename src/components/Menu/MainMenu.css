@@ -1,6 +1,12 @@
+.navDiv {
+    background-color: black;
+}
+
 .MainNav {
     background-color: black;
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .MainNav a {
@@ -17,8 +23,13 @@
     color: blue;
 }
 
-.HomeLinkIcon {
+.HomeLinkIcon,
+.MembershipLinkIcon {
     display: none;
+}
+
+i {
+    padding-left: 1%;
 }
 
 .HomeLink,
@@ -32,7 +43,7 @@
     padding: .5rem;
 }
 
-.AboutLinkGroup:hover .AboutLinkSubMenu {
+/* .AboutLinkGroup:hover .AboutLinkSubMenu {
     display: block;
 }
 
@@ -77,7 +88,7 @@
 .CottagesLink:hover,
 .ResourcesLink:hover {
     background-color: gray;
-}
+} */
 
 .NatureLink,
 .HistoryLink,
@@ -105,9 +116,14 @@
 .ActivitiesLinkSubMenu,
 .MembershipLinkSubMenu,
 .ResidentialLinkSubMenu {
-    display: none;
+    /* display: none; */
     margin: auto 2rem;
     padding: .5rem;
 }
 
-
+@media only screen and (max-width: 1299px) {
+    .MainNav {
+        display: none;
+    }
+    
+}

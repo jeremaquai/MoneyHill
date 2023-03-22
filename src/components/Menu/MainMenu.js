@@ -9,8 +9,24 @@ import './MainMenu.css';
 
 export default function MainMenu() {
 
+    
+    // menu.style.display = 'none';
+    const handleClick = () => {
+        const menu = document.getElementById('nav');
+
+        if (menu.style.display === 'flex') {
+            menu.style.display = 'none';
+        } else {
+            menu.style.display = 'flex';
+        }
+    }
+
     return (
-        <nav className="MainNav" >
+        <div className="navDiv" >
+        <button onClick={handleClick} >
+            <i className="fa-solid fa-bars"></i>
+        </button>
+        <nav id="nav" className="MainNav" >
 
             {MAINMENUDATA.map((menuItem, index) => {
                 return (
@@ -19,7 +35,7 @@ export default function MainMenu() {
                             <NavLink to={ menuItem.path } 
                             activeClassName={'active'}
                             role={menuItem.class}  >
-                                {menuItem.name} <i className={ menuItem.class+'Icon' + " fa-solid fa-angle-down"} ></i>
+                                {menuItem.name} 
                             </NavLink>
                         </div>
                         <div className={menuItem.class + 'SubMenu'}>
@@ -42,5 +58,10 @@ export default function MainMenu() {
 
             
         </nav>
+        </div>
     );
+
+    // const menu = document.getElementById('nav');
 }
+
+
