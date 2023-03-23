@@ -60,6 +60,7 @@ p {
     display: flex;
     flex-direction: row;
     min-width: 40%;
+    max-width: 100%;
 }
 
 i {
@@ -82,12 +83,31 @@ i {
 @media only screen and (max-width: 449px) {
     .MoneyHillContact {
         flex-direction: column;
+        width: 100%;
+    }
+
+    .address p {
+        line-height: 100%;
+    }
+
+    .phoneAndEmail {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+     
+
+    .phoneAndEmail p {
+        display: inline-block;
+        margin: auto;
+        width: 55%;
     }
 
     .icons {
         margin: auto;
     }
     .DevContact {
+        width: 45%;
         margin: auto;
     }
 }
