@@ -1,4 +1,4 @@
-.navDiv {
+.mobileNavDiv {
     background-color: black;
 }
 
@@ -7,6 +7,11 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+}
+
+.subMenuRevealButton {
+    width: 25px;
+    margin-left: 20px;
 }
 
 .MainNav a {
@@ -23,8 +28,8 @@
     color: blue;
 }
 
-.HomeLinkIcon,
-.MembershipLinkIcon {
+.HomeLinkButton,
+.MembershipLinkButton {
     display: none;
 }
 
@@ -43,52 +48,7 @@ i {
     padding: .5rem;
 }
 
-/* .AboutLinkGroup:hover .AboutLinkSubMenu {
-    display: block;
-}
 
-.AmenitiesLinkGroup:hover .AmenitiesLinkSubMenu {
-    display: block;
-}
-
-.EventsLinkGroup:hover .EventsLinkSubMenu {
-    display: block;
-}
-
-.ActivitiesLinkGroup:hover .ActivitiesLinkSubMenu {
-    display: block;
-}
-
-.ResidentialLinkGroup:hover .ResidentialLinkSubMenu {
-    display: block;
-}
-
-.HomeLink:hover,
-.AboutLink:hover,
-.AmenitiesLink:hover,
-.EventsLink:hover,
-.ActivitiesLink:hover,
-.MembershipLink:hover,
-.ResidentialLink:hover,
-.NatureLink:hover,
-.HistoryLink:hover,
-.ClubhouseLink:hover,
-.GolfLink:hover,
-.TennisLink:hover,
-.FitnessLink:hover,
-.OutdoorsLink:hover,
-.WeddingsLink:hover,
-.TournamentsLink:hover,
-.BusinessLink:hover,
-.YouthLink:hover,
-.GroupsLink:hover,
-.ComMapLink:hover,
-.HomesLink:hover,
-.LandLink:hover,
-.CottagesLink:hover,
-.ResourcesLink:hover {
-    background-color: gray;
-} */
 
 .NatureLink,
 .HistoryLink,
