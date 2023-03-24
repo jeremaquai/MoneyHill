@@ -43,7 +43,7 @@ export default function MainMenu() {
                     <button data-testid='MenuButton' onClick={handleClick} >
                         <i className="fa-solid fa-bars"></i>
                     </button>
-                    <nav id="nav" className="MainNav" >
+                    <nav style={{display: 'none'}} id="nav" className="MainNav" >
 
                         {MAINMENUDATA.map((menuItem, index) => {
                             return (

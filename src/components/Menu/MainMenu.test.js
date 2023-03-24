@@ -194,15 +194,86 @@ describe('MainMenu Component Function', () => {
             </Provider>
         );
 
-        const button = screen.getByTestId(/ResidentialLinkButton/i);
+        const button = screen.getByTestId(/MenuButton/i);
 
-        expect(getByRole(/homeLink/i)).toBeInTheDocument(); 
-        expect(getByRole(/aboutlink/i)).toBeInTheDocument();
-        expect(getByRole(/amenitiesLink/i)).toBeInTheDocument();
-        expect(getByRole(/eventsLink/i)).toBeInTheDocument();
-        expect(getByRole(/activitiesLink/i)).toBeInTheDocument();
-        expect(getByRole(/membershipLink/i)).toBeInTheDocument();
-        expect(getByRole(/residentialLink/i)).toBeInTheDocument();
+        expect(screen.queryByRole(/homeLink/i)).toBeNull(); 
+        expect(screen.queryByRole(/aboutlink/i)).toBeNull();
+        expect(screen.queryByRole(/naturelink/i)).toBeNull();
+        expect(screen.queryByRole(/historylink/i)).toBeNull();
+        expect(screen.queryByRole(/amenitiesLink/i)).toBeNull();
+        expect(screen.queryByRole(/clubhouselink/i)).toBeNull();
+        expect(screen.queryByRole(/golflink/i)).toBeNull();
+        expect(screen.queryByRole(/tennislink/i)).toBeNull();
+        expect(screen.queryByRole(/fitnesslink/i)).toBeNull();
+        expect(screen.queryByRole(/outdoorslink/i)).toBeNull();
+        expect(screen.queryByRole(/eventsLink/i)).toBeNull();
+        expect(screen.queryByRole(/weddingslink/i)).toBeNull();
+        expect(screen.queryByRole(/tournamentslink/i)).toBeNull();
+        expect(screen.queryByRole(/businesslink/i)).toBeNull();
+        expect(screen.queryByRole(/activitiesLink/i)).toBeNull();
+        expect(screen.queryByRole(/youthlink/i)).toBeNull();
+        expect(screen.queryByRole(/groupslink/i)).toBeNull();
+        expect(screen.queryByRole(/membershipLink/i)).toBeNull();
+        expect(screen.queryByRole(/residentialLink/i)).toBeNull();
+        expect(screen.queryByRole(/commaplink/i)).toBeNull();
+        expect(screen.queryByRole(/homeslink/i)).toBeNull();
+        expect(screen.queryByRole(/landlink/i)).toBeNull();
+        expect(screen.queryByRole(/cottageslink/i)).toBeNull();
+        expect(screen.queryByRole(/resourceslink/i)).toBeNull();
+
+        fireEvent.click(button);
+        
+        expect(screen.getByRole(/homeLink/i)).toBeInTheDocument(); 
+        expect(screen.getByRole(/aboutlink/i)).toBeInTheDocument();
+        expect(screen.getByRole(/natureLink/i)).toBeInTheDocument();
+        expect(screen.getByRole(/historyLink/i)).toBeInTheDocument();
+        expect(screen.getByRole(/amenitiesLink/i)).toBeInTheDocument();
+        expect(screen.getByRole(/clubhouseLink/i)).toBeInTheDocument();
+        expect(screen.getByRole(/GolfLink/i)).toBeInTheDocument();
+        expect(screen.getByRole(/tennisLink/i)).toBeInTheDocument();
+        expect(screen.getByRole(/fitnessLink/i)).toBeInTheDocument();
+        expect(screen.getByRole(/OutdoorsLink/i)).toBeInTheDocument();
+        expect(screen.getByRole(/eventsLink/i)).toBeInTheDocument();
+        expect(screen.getByRole(/weddingsLink/i)).toBeInTheDocument();
+        expect(screen.getByRole(/tournamentsLink/i)).toBeInTheDocument();
+        expect(screen.getByRole(/businessLink/i)).toBeInTheDocument();
+        expect(screen.getByRole(/activitiesLink/i)).toBeInTheDocument();
+        expect(screen.getByRole(/youthLink/i)).toBeInTheDocument();
+        expect(screen.getByRole(/groupsLink/i)).toBeInTheDocument();
+        expect(screen.getByRole(/membershipLink/i)).toBeInTheDocument();
+        expect(screen.getByRole(/residentialLink/i)).toBeInTheDocument();
+        expect(screen.getByRole(/commapLink/i)).toBeInTheDocument();
+        expect(screen.getByRole(/homesLink/i)).toBeInTheDocument();
+        expect(screen.getByRole(/landLink/i)).toBeInTheDocument();
+        expect(screen.getByRole(/cottagesLink/i)).toBeInTheDocument();
+        expect(screen.getByRole(/resourcesLink/i)).toBeInTheDocument();
+
+        fireEvent.click(button);
+
+        expect(screen.queryByRole(/homeLink/i)).toBeNull(); 
+        expect(screen.queryByRole(/aboutlink/i)).toBeNull();
+        expect(screen.queryByRole(/naturelink/i)).toBeNull();
+        expect(screen.queryByRole(/historylink/i)).toBeNull();
+        expect(screen.queryByRole(/amenitiesLink/i)).toBeNull();
+        expect(screen.queryByRole(/clubhouselink/i)).toBeNull();
+        expect(screen.queryByRole(/golflink/i)).toBeNull();
+        expect(screen.queryByRole(/tennislink/i)).toBeNull();
+        expect(screen.queryByRole(/fitnesslink/i)).toBeNull();
+        expect(screen.queryByRole(/outdoorslink/i)).toBeNull();
+        expect(screen.queryByRole(/eventsLink/i)).toBeNull();
+        expect(screen.queryByRole(/weddingslink/i)).toBeNull();
+        expect(screen.queryByRole(/tournamentslink/i)).toBeNull();
+        expect(screen.queryByRole(/businesslink/i)).toBeNull();
+        expect(screen.queryByRole(/activitiesLink/i)).toBeNull();
+        expect(screen.queryByRole(/youthlink/i)).toBeNull();
+        expect(screen.queryByRole(/groupslink/i)).toBeNull();
+        expect(screen.queryByRole(/membershipLink/i)).toBeNull();
+        expect(screen.queryByRole(/residentialLink/i)).toBeNull();
+        expect(screen.queryByRole(/communitylink/i)).toBeNull();
+        expect(screen.queryByRole(/homeslink/i)).toBeNull();
+        expect(screen.queryByRole(/landlink/i)).toBeNull();
+        expect(screen.queryByRole(/cottageslink/i)).toBeNull();
+        expect(screen.queryByRole(/resourceslink/i)).toBeNull();
     });
 })
 
