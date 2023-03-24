@@ -77,6 +77,10 @@ i {
     .MoneyHillContact {
         width: 100%;
     }
+
+    .address p {
+        line-height: 100%;
+    }
     
 }
 
@@ -100,14 +104,14 @@ i {
     .phoneAndEmail p {
         display: inline-block;
         margin: auto;
-        width: 55%;
+        min-width: 55%;
     }
 
     .icons {
         margin: auto;
     }
     .DevContact {
-        width: 45%;
+        min-width: 45%;
         margin: auto;
     }
 }

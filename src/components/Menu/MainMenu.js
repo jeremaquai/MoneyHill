@@ -40,7 +40,7 @@ export default function MainMenu() {
         while (mobileState) {
             return (
                 <div className="mobileNavDiv" >
-                    <button onClick={handleClick} >
+                    <button data-testid='MenuButton' onClick={handleClick} >
                         <i className="fa-solid fa-bars"></i>
                     </button>
                     <nav id="nav" className="MainNav" >
@@ -91,7 +91,9 @@ export default function MainMenu() {
                                         activeClassName={'active'}
                                         role={menuItem.class}  >
                                             {menuItem.name} 
-                                            <button className={ menuItem.class + 'Button' + " subMenuRevealButton"} onClick={handleSubMenuClick.bind(this, [menuItem.class + 'SubMenu'])} >
+                                            <button className={ menuItem.class + 'Button subMenuRevealButton'} 
+                                                    onClick={handleSubMenuClick.bind(this, [menuItem.class + 'SubMenu'])}
+                                                    data-testid={ menuItem.class + 'Button' } >
                                                 <i className="fa-solid fa-caret-down"></i>
                                             </button>
                                         </NavLink>
